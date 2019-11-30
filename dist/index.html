@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Trang Chủ</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="./css/core.min.css">
+		<link rel="stylesheet" href="./css/main.min.css">
+	</head>
+	<body>
+		<div id="fb-root"></div>
+		<div id="loading">
+			<div class="logo-loader"><img src="./assets/images/icons/loading.svg" alt=""></div>
+			<div class="progstat-wrapper">Loading:<span id="progstat">0</span>%</div>
+			<div id="progress"></div>
+		</div>
+		<header>
+			<div class="top-header"> 
+				<div class="container"> 
+					<div class="box-left-top-header"> 
+						<div class="box-social"> <a href="#"><img src="./assets/images/icons/fb.svg" alt="#"></a><a href="#"><img src="./assets/images/icons/twitter.svg" alt="#"></a><a href="#"><img src="./assets/images/icons/pinter.svg" alt="#"></a><a href="#"><img src="./assets/images/icons/instargram.svg" alt="#"></a>
+							<p>Need Help? call: 0900 800 900</p>
+						</div>
+					</div>
+					<div class="box-right-top-header"> 
+						<div class="box-seach"> <a href="#"><img src="./assets/images/icons/seach.svg" alt="#"></a></div>
+						<ul class="login">
+							<li><a href="#">LOGIN </a></li>
+							<li><a href="#">INFO </a></li>
+						</ul>
+						<ul class="customer">
+							<li><a href="#">CUSTOMER SUPPORT </a></li>
+							<li><a href="#">SHIPPING & DELIVERY</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="menu">
+				<div class="container">
+					<div class="box-menu">
+						<div class="logo"><img src="./assets/images/logo.png" alt="#"></div>
+						<div class="nav"> 
+							<ul>
+								<li><a href="#">HOME</a></li>
+								<li><a href="#">ABOUT</a></li>
+								<li><a href="#">SHOP</a></li>
+								<li><a href="#">BLOG</a></li>
+								<li><a href="#">CONTACT      </a></li>
+							</ul>
+							<div class="box-promo"><span>PROMOTIONS </span></div>
+							<div class="cart"><img src="./assets/images/icons/shopping_bag.svg" alt="#">
+								<div class="span"> <span>0</span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="google-map">
+				<select>
+					<option value="inputLocations_1">Bản Đồ Nội Địa</option>
+					<option value="inputLocations_2">Bản Đồ Ngoại Địa</option>
+				</select>
+				<div id="map"></div>
+			</div>
+			<script>
+				var locationsObject = {
+					inputLocations_1 : [
+						{
+							lat: 10.807100,
+							lng: 106.661638,
+							name: 'Ho Chi Minh Headoffice',
+							icon: "./assets/images/icons/gmap.svg",
+							address: 'Floor 4, Thang Long Building, 29 Thang Long St., Ward 4,  Tan Binh Dist., HCMC, Vietnam.',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						},
+						{
+							lat: 11.328765,
+							lng: 106.476674,
+							name: 'Binh Duong Branch',
+							icon: "./assets/images/icons/gmap.svg",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						}
+					],
+					inputLocations_2 : [
+						{
+							lat: 11.328765,
+							lng: 106.476674,
+							name: 'Binh Duong Branch',
+							icon: "./img/icons/gmap.svg",
+							address: '9b/5g Binh Dang Hamlet, Binh Hoa Village, Thuan An Dist Binh Duong',
+							hotLine: '(+84) 903 910 430 - Mr.Linh',
+							phone: '(84.28) 3848 7858',
+							fax: '(84.28) 3848 7858',
+							email: 'npv-saleadmin@npvexpress.com',
+							website: 'www.npvexpress.com',
+							optimized: false
+						},
+					]
+				}
+			</script>
+			<div class="index-page" id="js-page-verify" hidden></div>
+		</main>
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?&amp;key=AIzaSyCHvmyTralDp2Y0m7zEiN185u1vtArcC5s&amp;libraries=places"></script>
+		<script type="text/javascript" src="./js/core.min.js"></script>
+		<script type="text/javascript" src="./js/main.min.js"></script>
+	</body>
+</html>
