@@ -10,6 +10,7 @@
                         position: relative;
                         figcaption{
                             position: absolute;
+                            z-index: 6;
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%); 
@@ -28,15 +29,12 @@
                                 color: #b2b2b2;
                                 margin-bottom: 1.5em;
                             }
-                            .buttom-silde{
-                                
-                                width: 210px;
-                                
+                            .buttom-slider{                             
                                 a{
                                     font-family: 'OpenSans';
-                                    
                                     padding: 12px 35px;
                                     line-height: 25px;
+                                    border: 3px solid #ffffff;
                                 }
                             }
                         }
