@@ -116,30 +116,38 @@ const SVG = () => {
 	});
 }
 
-// SHOW BUTTON BACK TO TOP
-const showBackToTop = () => {
-	let currentScroll = document.querySelector('body').clientHeight - (window.innerHeight + 200);
-	if (window.scrollY >= currentScroll) {
-		document.getElementById('back-to-top').style.display = 'flex';
-		setTimeout(() => {
-			document.getElementById('back-to-top').classList.add('show');
-		}, 0);
-	} else {
-		document.getElementById('back-to-top').style.display = 'none';
-		document.getElementById('back-to-top').classList.remove('show');
-	}
-}
+// // SHOW BUTTON BACK TO TOP
+// const showBackToTop = () => {
+// 	let currentScroll = document.querySelector('body').clientHeight - (window.innerHeight + 200);
+// 	if (window.scrollY >= currentScroll) {
+// 		document.getElementById('back-to-top').style.display = 'flex';
+// 		setTimeout(() => {
+// 			document.getElementById('back-to-top').classList.add('show');
+// 		}, 0);
+// 	} else {
+// 		document.getElementById('back-to-top').style.display = 'none';
+// 		document.getElementById('back-to-top').classList.remove('show');
+// 	}
+// }
 
-// CLICK GO TOP
-const clickGoTop = () => {
-	let goTopButton = document.getElementById('back-to-top')
-	goTopButton.addEventListener('click', () => {
-		window.scrollTo({
-			top: 0,
-			behavior: 'smooth',
-		})
-	})
-}
+// // CLICK GO TOP
+// const clickGoTop = () => {
+// 	let goTopButton = document.getElementById('back-to-top')
+// 	goTopButton.addEventListener('click', () => {
+// 		window.scrollTo({
+// 			top: 0,
+// 			behavior: 'smooth',
+// 		})
+// 	})
+// }
+
+function slideHome (){
+	var slideHome = new Swiper('.swiper-container',{
+		loop: true,
+		direction: 'vertical',
+		
+	});
+};
 
 
 // CHẠY KHI DOCUMENT SẴN SÀNG
@@ -153,7 +161,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	// SVG CONTROL
 	SVG();
 	// HEADER
-	activeMenuByUrl()
+	activeMenuByUrl();
+	slideHome();
 });
 
 // CHẠY KHI WINDOWN SCROLL

@@ -111,6 +111,9 @@ header{
                             a{
                                 color: rgb(88, 87, 87);
                                 font-weight: bold;
+                                font-family:'Oswald' ;
+                                letter-spacing: 5px;
+                                font-size: 10px;
                                 &:hover{
                                     color:#AB8E69 ;
                                 }
@@ -127,6 +130,9 @@ header{
                         height: 50px;
                         margin-right: 20px;
                         background-color: #AB8E69;
+                        font-family:'Oswald' ;
+                        letter-spacing: 5px;
+                        font-size: 10px;
                         display:flex;
                         justify-content:center;
                         align-items:center;
@@ -140,16 +146,21 @@ header{
                             margin-top: 15px;
                             width: 30px;
                         }
-                        .span{
+                        
+                            
+                        span{
                             position: absolute;
-                            top: 6px;
+                            top: 12px;
                             left: -3px;
                             color: rgb(128, 126, 126);
-                           span{
-                               padding: 5px 6px;
-                               background-color: #AB8E69;
-                               border-radius: 100%;
-                           }         
+                            width: 15px;
+                            height: 15px;
+                            border-radius: 15px;
+                            background-color: #AB8E69;
+                            text-align: center; 
+                            font-size: 11px; 
+                            font-weight: bold;
+                                   
                         }
                         
                     }
