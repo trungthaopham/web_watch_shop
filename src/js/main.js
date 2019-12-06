@@ -141,13 +141,18 @@ const SVG = () => {
 // 	})
 // }
 
-function slideHome (){
-	var slideHome = new Swiper('.swiper-container',{
-		loop: true,
-		direction: 'vertical',
-		
+function sliderHome() {
+	var sliderHome = new Swiper('.slider-Home .swiper-container', {
+		speed: 400,
+		lopp: true,
+		effect: 'fade',
+		// autoplay: true,
+		navigation: {
+			nextEl: '.slider-Home .swiper-button-next',
+			prevEl: '.slider-Home .swiper-button-prev',
+		},
 	});
-};
+}
 
 
 // CHẠY KHI DOCUMENT SẴN SÀNG
@@ -162,7 +167,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	SVG();
 	// HEADER
 	activeMenuByUrl();
-	slideHome();
+	sliderHome();
 });
 
 // CHẠY KHI WINDOWN SCROLL

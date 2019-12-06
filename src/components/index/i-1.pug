@@ -1,14 +1,15 @@
-.index-1
-    .slider-home
+section.index-1
+    .slider-Home
         .swiper-container
             .swiper-wrapper
                 -for(i=1;i<=2;i++)
-                    .swiper-slide
+                    .swiper-slide.item
                         figure
                             img(src="./assets/images/banner/"+i+".jpg", alt="#")
                             figcaption 
                                 h3 FITS PERFECT WITH YOUR SUIT
                                 p Check out the new collection of Luxury Watches
                                 .buttom-slider  
-                                    a(href="#") shop now
-            
+                                    a(href="#") SHOP NOW
+        .swiper-button-next
+        .swiper-button-prev   
